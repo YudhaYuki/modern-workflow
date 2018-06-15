@@ -15,3 +15,16 @@
         @mixin-content;
     }
 }
+
+/* 
+    To create a bit of pseudo or fake content with CSS
+    Add blank space after all of the content in the main row div 
+    in other word, it creates that content, right where we used to have our empty div
+*/ 
+@define-mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

@@ -351,6 +351,12 @@ img {
     height: auto;
 }
 
+/* 
+    To create a bit of pseudo or fake content with CSS
+    Add blank space after all of the content in the main row div 
+    in other word, it creates that content, right where we used to have our empty div
+*/
+
 .wrapper {
     padding-left: 18px;
     padding-right: 18px;
@@ -521,4 +527,20 @@ img {
 
 .headline--b-margin-large {
         margin-bottom: 1.6em;
+    }
+
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.row__4 {
+        float: left;
+        width: 33.33%; /* (100% : 12) x 4 */ 
+    }
+
+.row__8 {
+        float: left;
+        width: 66.66%;
     }
