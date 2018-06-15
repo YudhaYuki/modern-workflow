@@ -351,6 +351,10 @@ img {
     height: auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* 
     To create a bit of pseudo or fake content with CSS
     Add blank space after all of the content in the main row div 
@@ -358,6 +362,7 @@ img {
 */
 
 .wrapper {
+    overflow: hidden; /* hidden margin last child */
     padding-left: 18px;
     padding-right: 18px;
     max-width: 1200px;
@@ -533,6 +538,16 @@ img {
         content: "";
         clear: both;
         display: table;
+    }
+
+.row--gutters {
+        margin-right: -65px;
+    }
+
+/* Select all direct childer with tag DIV */
+
+.row--gutters > div {
+        padding-right: 65px;
     }
 
 .row__4 {
