@@ -2,7 +2,9 @@
     overflow: hidden; /* hidden margin last child */
     padding-left: 18px;
     padding-right: 18px;
-    max-width: 1200px;
+
+    /* Adding 18 x 18px from padding-left and padding-right after adding box-sizing: border-box globally */
+    max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
 
