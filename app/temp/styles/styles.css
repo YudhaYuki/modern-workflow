@@ -902,10 +902,13 @@ a {
         margin: .25rem 0 1rem 0;
     }
 
-/* Testing 123 */
+/* 
+    Do not edit modules/_sprite directly as it is generated automatically by gulp.
+    Instead edit gulp/template/sprite
+*/
 
 .icon {
-            background-image: url('/temp/sprite/css/svg/sprite.css-d675eadb.svg');
+            background-image: url('/temp/sprite/css/svg/sprite-d675eadb.svg');
         }
 
 .icon--clear-view-escapes {

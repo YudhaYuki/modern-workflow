@@ -1,4 +1,7 @@
-/* Testing 123 */
+/* 
+    Do not edit modules/_sprite directly as it is generated automatically by gulp.
+    Instead edit gulp/template/sprite
+*/
 
 {{#shapes}}
     {{#first}}
@@ -6,7 +9,7 @@
             background-image: url('/temp/sprite/css/{{{sprite}}}');
         }
     {{/first}}
-    
+
     .icon--{{base}} {
         width: {{width.outer}}px;
         height: {{height.outer}}px;
