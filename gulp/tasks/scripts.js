@@ -1,10 +1,9 @@
 var gulp = require('gulp');
 var webpack = require('webpack');
 
-gulp.task('script', function(callback) {
+gulp.task('scripts', function(callback) {
     webpack(require('../../webpack.config.js'), function() {
         console.log('Horaay, webpack completed !');
         callback();
     });
 });
-
