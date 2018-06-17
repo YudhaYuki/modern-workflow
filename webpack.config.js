@@ -9,6 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, "./app/temp/scripts"),
         filename: "[name].js"
     },
+
     module: {
         loaders: [
             {
@@ -16,6 +17,7 @@ module.exports = {
                 query: {
                     presets: ['es2015']
                 },
+                // This tell webpack that we only this bable loader/plugin to be applied to javascript files and nothing else.
                 test: /\.js$/,
                 exclude: /node_modules/
             }
