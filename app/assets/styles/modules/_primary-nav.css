@@ -53,6 +53,11 @@
             font-size: 1rem;
             padding: 12px 0;
             background-color: transparent;
+
+            /* Only if it has a class is-current-link */
+            &.is-current-link {
+                color: #fabb69;
+            }
         }
     }
 }

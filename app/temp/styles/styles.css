@@ -1256,7 +1256,12 @@ a {
             font-size: 1rem;
             padding: 12px 0;
             background-color: transparent
+
+            /* Only if it has a class is-current-link */
     }
+            .primary-nav a.is-current-link {
+                color: #fabb69;
+            }
     }
 
 .reveal-item {
